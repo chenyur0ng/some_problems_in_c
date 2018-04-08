@@ -39,6 +39,19 @@ if((num>=-EPSINON)&&(num<=EPSINON));//EPSINON即为允许的误差
 
 ## 十六~十八（循环三剑客）break、continue、goto
 
+goto的示例
+
+```c
+void function(){
+    int flag=0;
+	jump:
+  	  flag++;
+      if(flag<9)goto jump;
+}
+```
+
+
+
 ## 十九~二十一 switch和case、default
 
 case只能是整型或者字符型的常量或常量表达式（作者说“这三者都存在于内存区的文字常量区，生存期很长，不会像其他东西那样容易被销毁，这样可能可以使得程序错误率降低”）
